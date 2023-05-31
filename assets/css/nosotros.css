@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: red;
+    text-align: right;
+}
+
+header h1,
+header nav ul {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header h1 {
+    color: white;
+}
+
+header nav {
+    margin-right: 20px;
+}
+
+header nav li {
+    display: inline-block;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* Contenido */
+#nosotros-1 {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#sub-nosotros-1 {
+    flex-basis: 70%;
+    /* Ancho del contenido en relación al contenedor */
+    padding: 20px;
+}
+
+#sub-nosotros-1 h1 {
+    font-size: 30px;
+    /* Ajusta el tamaño de fuente según tus necesidades */
+}
+
+#sub-nosotros-1 p {
+    margin-top: 0;
+    font-size: 25px;
+}
+
+#nosotros-1 img {
+    margin-left: auto;
+    /* Empuja la imagen hacia la derecha */
+    max-width: 35%;
+    /* Ajusta el tamaño máximo de la imagen */
+}
+
+#nosotros-2 {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#sub-nosotros-2 {
+    flex-basis: 70%;
+    /* Ancho del contenido en relación al contenedor */
+}
+
+#sub-nosotros-2 h1 {
+    font-size: 30px;
+    /* Ajusta el tamaño de fuente según tus necesidades */
+}
+
+#sub-nosotros-2 p {
+    margin-top: 0;
+    font-size: 25px;
+}
+
+#nosotros-2 img {
+    margin-right: 35px;
+    /* Empuja la imagen hacia la izquierda */
+    max-width: 30%;
+    /* Ajusta el tamaño máximo de la imagen */
+}
+
+/* Pie de Pagina */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col {
+    width: 30%;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+li i {
+    margin-right: 10px;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons li {
+    margin-right: 10px;
+}
+
+.social-icons li a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.bottom {
+    background-color: #222;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.bottom p {
+    margin: 0;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/reserva.css">
+    <link rel="icon" type="image/x-icon" href="../assets/img/logo.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Reservas</title>
+</head>
+
+<body>
+    <header>
+        <h1>Alquiler de vehículos</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="#">Promociones</a></li>
+                <li><a href="#">Guias de Viaje</a></li>
+                <li><a href="sobre_nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="reserva">
+        <h1>Reserva de Vehículos</h1>
+
+        <form action="procesar_reserva.php" method="POST">
+            <h2>Información de la Reserva</h2>
+            <label for="fecha-recogida">Fecha de Recogida:</label>
+            <input type="date" id="fecha-recogida" name="fecha-recogida" required>
+
+            <label for="fecha-devolucion">Fecha de Devolución:</label>
+            <input type="date" id="fecha-devolucion" name="fecha-devolucion" required>
+
+            <label for="ubicacion-recogida">Ubicación de Recogida:</label>
+            <input type="text" id="ubicacion-recogida" name="ubicacion-recogida" required>
+
+            <label for="ubicacion-devolucion">Ubicación de Devolución:</label>
+            <input type="text" id="ubicacion-devolucion" name="ubicacion-devolucion" required>
+
+            <label for="tipo-vehiculo">Tipo de Vehículo:</label>
+            <select id="tipo-vehiculo" name="tipo-vehiculo" required>
+                <option value="compacto">Compacto</option>
+                <option value="sedan">Sedán</option>
+                <option value="suv">SUV</option>
+                <!-- Agrega más opciones según tus categorías de vehículos -->
+            </select>
+
+            <label for="opciones-adicionales">Opciones Adicionales:</label>
+            <input type="checkbox" id="seguro" name="seguro">
+            <label for="seguro">Seguro</label>
+
+            <input type="checkbox" id="gps" name="gps">
+            <label for="gps">GPS</label>
+
+            <!-- Agrega más opciones adicionales según tus servicios -->
+
+            <h2>Información Personal</h2>
+            <label for="nombres-apellidos">Nombres y Apellidos:</label>
+            <input type="text" id="nombres-apellidos" name="nombres-apellidos" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje"></textarea>
+
+            <button type="submit">Realizar Reserva</button>
+        </form>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3>Enlaces útiles</h3>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="reservas.html">Reservas</a></li>
+                        <li><a href="#">Promociones</a></li>
+                        <li><a href="#">Guias de viaje</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li><i class="fa fa-phone"></i> +51 986-518-888</li>
+                        <li><i class="fa fa-envelope"></i> reservas@caminoperurentacar.com</li>
+                        <li><i class="fa fa-map-marker"></i> Calle Manuel Razuri 472, Urb. Vista Alegre</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Síguenos</h3>
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <p>Todos los derechos reservados &copy; 2023 CaminoPeru Rent a Car</p>
+        </div>
+    </footer>
+</body>
+
+</html>

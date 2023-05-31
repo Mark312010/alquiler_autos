@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: red;
+    text-align: right;
+}
+
+header h1,
+header nav ul {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header h1 {
+    color: white;
+}
+
+header nav {
+    margin-right: 20px;
+}
+
+header nav li {
+    display: inline-block;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* Contenido */
+body {
+    background-color: #fff;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+#catalogo {
+    background-color: #fff;
+    padding: 20px;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    color: red;
+}
+
+.car-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.car {
+    background-color: #444;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.car img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.car h2 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.car p {
+    margin-bottom: 10px;
+}
+
+.car ul {
+    margin-bottom: 10px;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.car a {
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#car-lis-left {
+    width: 48%;
+}
+
+#car-lis-right {
+    width: 48%;
+}
+
+/* Pie de Pagina */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col {
+    width: 30%;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+li i {
+    margin-right: 10px;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons li {
+    margin-right: 10px;
+}
+
+.social-icons li a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.bottom {
+    background-color: #222;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.bottom p {
+    margin: 0;
+}
